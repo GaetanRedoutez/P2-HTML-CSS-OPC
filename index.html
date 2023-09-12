@@ -12,15 +12,41 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/3a68270698.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header class="header">
+            <img class="logo" src="images\logo\Booki.png" alt="Logo Booki">
+            <nav aria-label="Navigation principale">
+                <ul class="menu-navigation">
+                    <li>
+                        <button onclick="window.location.href = '#hebergements-ancre'"  class="button-hebergement">Hébergements</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href = '#activites-ancre'" class="button-activites">Activités</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <div class="hebergements-and-populaires">
+            <div class="info-group">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <div class="search-bar">
+                    <h1>search-bar</h1>
+                </div>
+                <div class="filter-bar">
+                    <h1>filter-bar</h1>
+                </div>
+                <div class="info-bar">
+                    <p>"icon"Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
+            <div id="hebergements-ancre" class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <h2>Hébergements à search-bar</h2>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -88,8 +114,50 @@
                     </div>
                 </section>
             </div>
+            <div id="activites-ancre"class="activites">
+                <h2>Activités à Marseille</h2>
+                <article class="card-activite">
+                    <img src="images\activites\reno-laithienne.jpg" alt="Image du Vieux-Port de Marseille">
+                    <div class="card-txt">
+                        <h3>Vieux-Port</h3>
+                    </div>
+                </article>
+            </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="class-footer">
+                <ul>
+                    <li class="footer-titre"><h3>À propos</h3></li>
+                    <li>
+                        <a href="#" class="href-footer">Fonctionnement du site</a>
+                    </li>
+                    <li>
+                        <a href="#" class="href-footer">Conditions générales </a>
+                    </li>
+                    <li>
+                        <a href="#" class="href-footer">Données et confidentialité</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="footer-titre"><h3>Nos hébergements</h3></li>
+                    <li>
+                        <a href="#" class="href-footer">Charte qualité</a>
+                    </li>
+                    <li>
+                        <a href="#" class="href-footer">Proposer votre hôtel</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="footer-titre"><h3>Assistance</h3></li>
+                    <li>
+                        <a href="#" class="href-footer">Centre d’aide</a>
+                    </li>
+                    <li>
+                        <a href="#" class="href-footer">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 
