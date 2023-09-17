@@ -57,10 +57,8 @@ ul{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card-activites {
-    background-color: white;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+.card-content img{
+    object-fit: cover;
 }
 
 .card img {
@@ -107,6 +105,7 @@ ul{
     background-color:transparent;
     border-color: transparent;
     height: 35px;
+    padding-top: 15px;
 }
 
 .menu-navigation :hover{
@@ -118,38 +117,46 @@ ul{
     margin-bottom: 35px;
 }
 
-
 .search-bar{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: white;
     border-radius: 20px;
-    width: 377px;
     height: 49px;
-    justify-content: space-between;
-    margin-bottom: 35px;
-    
+    width: 377px;
+    margin-bottom: 35px;    
 }
 .search-bar .saisie-ville{
     border-style: solid;
     border-width: 1px;
     border-color: var(--main-bg-color);
-    border-right:none ;
+    border-right: none;
 }
 
 .search-bar .fa-location-dot{
-    display: flex;
     color: black;
+    height: 100%;
     width: 50px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: var(--main-bg-color);
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center; 
+}
+.recherche-phone{
+    display: none;
+}
+.fa-magnifying-glass{
+    color: white;
+    width: 49px;
+    height: 49px;
+    border-radius: 20px;
 }
 
-.search-bar .recherche{
-    width: 132px;
+.recherche{
+    width: 100%;
     background-color: var(--main-color);
     border: transparent;
     border-top-right-radius: 20px;
@@ -159,7 +166,7 @@ ul{
     font-size: 18px;
 }
 
-.search-bar input{
+.info-group input{
     border: none;
     font-weight: bold;
     font-size: 18px;
@@ -222,7 +229,7 @@ ul{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.fa-info {
+.info-bar .fa-info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,10 +270,10 @@ ul{
     border-top-right-radius: 20px;
 }
 
-.hebergements-cards .card {
+/* .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-}
+} */
 
 /****** Hebergements ***********/
 .section-hebergements {
@@ -320,40 +327,40 @@ ul{
 
 /*********** Activités **********/
 #activites{
-    margin: 30px;
-    padding-top: 35px;
-}
-
-.activites-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 30px;
-    padding-top: 30px;
-}
-
-.activites-content img{
-    max-width: 298px;
-    height: 439px;
-    object-fit: cover;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-.activites-content h3{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.activites-content .card-activites{
+    padding: 30px;
     box-sizing: border-box;
-    max-width: 298px;
 }
 
-.activites-content .card-activites-txt{
-    display: flex;
-    height: 59px;
-    align-items: center;
+.activites-title{
+    padding-bottom: 35px;
 }
+
+.activites-card {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    
+}
+
+.activites-content {
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    border-radius: 20px;
+    height: 439px;
+}
+
+.activites-content img {
+    object-fit:cover ;
+    height: 380px;
+    width: 297px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-activites-txt{
+    margin-left: 15px;
+}
+
 /*********** Bas de page **********/
 .class-footer {
     background-color: var(--main-bg-color);
@@ -367,7 +374,7 @@ ul{
     width: 33%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    row-gap: 15px;
 }
 
 .footer-titre{
@@ -380,6 +387,7 @@ ul{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -411,13 +419,15 @@ ul{
         font-size: 13px;
     }
 
-    .activites-content img{
-        width: 194px;
-        height: 200px;
+    .activites-content {
+        height: 270px;
+        width: 193px;
     }
-
-    .activites-content .card-activites{
-        max-width: 194px;
+    
+    .activites-content img {
+        object-fit:cover ;
+        height: 200px;
+        width: 193px;
     }
 
     .filter-group{
@@ -430,5 +440,69 @@ ul{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */    
+    .logo{
+        align-self: center;
+        height: 19px;
+        width: 61px;
+        margin: 29px;
+    }
+    
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 115px;
+    }
+
+    .header nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }   
+    .menu-navigation{
+        margin-top: 0px;
+        padding-left: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .menu-navigation button{
+        background-color:transparent;
+        border-color: transparent;
+        height: 35px;
+        padding-top: 0px;
+        padding-bottom: 17px;
+    }
+    
+    .menu-navigation :hover{
+        color: var(--main-color);
+        border-bottom-color: var(--main-color);
+        border-top-color: transparent;
+    }
+
+
+    .search-bar{
+        width: 335px;  
+    }
+
+    .recherche{
+        display: none;
+    }
+
+    .saisie-ville{
+        width: 256px ;
+    }
+
+    .search-bar .recherche-phone{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 49px;
+        border-radius: 20px;
+        background-color: var(--main-color);
+        border: transparent;
+        color: white;
+    }
 }

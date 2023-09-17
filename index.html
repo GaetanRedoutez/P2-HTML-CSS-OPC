@@ -40,7 +40,8 @@
                     <i class="fa-solid fa-location-dot"></i>
                     <form class="search-bar">
                         <input type="text" required class="saisie-ville" value="Marseille, France">
-                        <input type="submit" value="Rechercher" class="recherche">
+                        <button class="recherche">Rechercher</button>
+                        <button class="recherche-phone"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
                 <div class="filter-group"> 
@@ -261,11 +262,13 @@
                     </div>
                 </section>
             </div>
-            <div id="activites">
-                <h2 class="section-title">Activités à Marseille</h2>
-                <div class="activites-content">
+            <section id="activites">
+                <div class="activites-title">
+                    <h2 class="section-title">Activités à Marseille</h2>
+                </div>
+                <div class="activites-card">
                     <a href="#">
-                        <article class="card-activites">
+                        <article class="activites-content">
                             <img src="images\activites\reno-laithienne.jpg" alt="Image du Vieux-Port de Marseille">
                             <div class="card-activites-txt">
                                 <h3>Vieux-Port</h3>
@@ -273,7 +276,7 @@
                         </article>
                     </a>
                     <a href="#">
-                        <article class="card-activites">
+                        <article class="activites-content">
                             <img src="images\activites\paul-hermann.jpg" alt="Image du Fort de Pomègues">
                             <div class="card-activites-txt">
                                 <h3>Fort de Pomègues</h3>
@@ -281,7 +284,7 @@
                         </article>
                     </a>
                     <a href="#">
-                        <article class="card-activites">
+                        <article class="activites-content">
                             <img src="images\activites\kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
                             <div class="card-activites-txt">
                                 <h3>Parc national des Calanques</h3>
@@ -289,7 +292,7 @@
                         </article>
                     </a>
                     <a href="#">
-                        <article class="card-activites">
+                        <article class="activites-content">
                             <img src="images\activites\florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
                             <div class="card-activites-txt">
                                 <h3>Notre-Dame-de-la-Garde</h3>
@@ -297,7 +300,8 @@
                         </article>
                     </a>
                 </div>  
-            </div>
+
+            </section>
         </main>
         <footer>
             <div class="class-footer">
