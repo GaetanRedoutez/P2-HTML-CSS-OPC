@@ -193,7 +193,7 @@ ul{
     height: 50px;
     padding-left: 17px;
     padding-right: 17px;
-    background-color: white;
+    background-color: inherit;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -440,6 +440,20 @@ ul{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    body{
+        margin: 0px;
+    }
+
+    .main-container{
+        padding: 0px;
+        background-color: var(--main-bg-color);
+    }    
+
+    .header {
+        background-color: white;
+    }
+
     .logo{
         align-self: center;
         height: 19px;
@@ -466,14 +480,20 @@ ul{
         padding-left: 0px;
         display: flex;
         justify-content: space-around;
+        width: 100%;
     }
     
+    .menu-navigation li{
+        width: 100%;
+    }
+
     .menu-navigation button{
         background-color:transparent;
         border-color: transparent;
         height: 35px;
         padding-top: 0px;
         padding-bottom: 17px;
+        width: 100%;
     }
     
     .menu-navigation :hover{
@@ -482,6 +502,11 @@ ul{
         border-top-color: transparent;
     }
 
+    .info-group{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
 
     .search-bar{
         width: 335px;  
@@ -495,14 +520,90 @@ ul{
         width: 256px ;
     }
 
-    .search-bar .recherche-phone{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+    .search-bar .saisie-ville{
+        border: none;
+    }
+
+    .recherche-phone {
+        display: flex;
         width: 49px;
         border-radius: 20px;
         background-color: var(--main-color);
         border: transparent;
         color: white;
+    }
+    
+    .recherche-phone .fa-magnifying-glass{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter-text-selection{
+    width: 162px;
+    }
+
+    .filter-group .filter-bar{
+        justify-content: space-around;
+        row-gap: 10px;
+        column-gap: normal;
+        flex-wrap: wrap;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .populaires{
+        margin-top: auto;
+        width: 100%;
+    }
+
+    .populaires-cards{
+        flex-direction: column;
+    }
+
+    .populaires-cards a{
+        width: 100%;
+    }
+
+    .section-hebergements{
+        margin-top: auto;
+        width: 100%;
+    }
+
+    .hebergements-cards{
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+
+    .activites-card{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .activites-card img {
+        height: 141px;
+        width: 100%;
+    }
+
+    .activites-card a {
+        height: auto;
+        width: 100%;
+    }
+
+    .activites-content{
+        height: 200px;
+        width: 100%;
+    }
+
+    .class-footer{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .class-footer ul{
+        width: auto;
     }
 }
