@@ -201,9 +201,7 @@ ul{
     column-gap: 11px;
     font-size: 17px;
     font-weight: bold;
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 .filter-text-selection .i{
@@ -215,9 +213,7 @@ ul{
 
 .filter-bar :hover{
     background-color: var(--filter-bg-color);
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 .info-bar{
@@ -269,11 +265,6 @@ ul{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
-/* .hebergements-cards .card {
-    display: flex;
-    flex-direction: column;
-} */
 
 /****** Hebergements ***********/
 .section-hebergements {
