@@ -177,6 +177,10 @@ input {
   border-right: none;
 }
 
+.city:focus {
+  outline: none;
+}
+
 .search-bar .fa-location-dot {
   color: black;
   height: 100%;
