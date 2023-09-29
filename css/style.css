@@ -267,6 +267,7 @@ input {
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .hebergements-card-content {
@@ -365,6 +366,7 @@ input {
 #activites {
   padding: 30px;
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .activites-title {
@@ -512,6 +514,8 @@ input {
   }
 
   .menu-navigation li {
+    display: flex;
+    align-items: start;
     width: 100%;
     text-align: center;
     padding-bottom: 0.2rem;
@@ -567,6 +571,7 @@ input {
   .filter-selection {
     width: 35%;
     font-size: 14px;
+    justify-content: start;
   }
 
   .filter-group .filter-bar {
@@ -580,6 +585,10 @@ input {
     row-gap: 0;
   }
 
+  .hebergements-and-populaires section {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
   .populaires {
     margin-top: auto;
     width: 100%;
@@ -619,9 +628,11 @@ input {
   .class-footer {
     flex-direction: column;
     height: auto;
+    margin-left: 10px;
   }
 
   .class-footer ul {
     width: auto;
+    margin-bottom: 15px;
   }
 }
