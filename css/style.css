@@ -630,6 +630,7 @@ input {
     flex-direction: column;
     height: auto;
     margin-left: 10px;
+    width: 90%;
   }
 
   .class-footer ul {
