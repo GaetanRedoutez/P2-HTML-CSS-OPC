@@ -231,9 +231,9 @@ input {
 }
 
 .filter-selection {
+  background-color: inherit;
   height: 50px;
   padding: 0 17px;
-  background-color: inherit;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -244,11 +244,8 @@ input {
   border: 2px solid var(--border-color);
 }
 
-.filter-selection .i {
-  width: 22px;
-  height: 22px;
-  object-fit: cover;
-  margin-right: 11px;
+.filter-bar .fa-solid {
+  border: 2px solid transparent;
 }
 
 /****** Hebergements And Populaires ***********/
